@@ -101,13 +101,13 @@ export default function WalletComponent({ }) {
                             <div className="nft-image-holder">
                                 <img
                                     className='nft-image'
-                                    src={nft.media[0].gateway || '/images/image-placeholder.jpg'}
-                                    alt={nft.title}
+                                    src={nft.image?.thumbnailUrl || '/images/image-placeholder.jpg'}
+                                    alt={nft.name}
                                 />
                             </div>
                             <div className="nft-desc">
-                                <p className='nft-name'>{nft.title}</p>
-                                <p className='nft-collection-name'>{nft.contract.name}</p>
+                                <p className='nft-name'>{nft.contract.name}</p>
+                                <p className='nft-collection-name'>{nft.name}</p>
                             </div>
                         </div>
                     )

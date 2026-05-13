@@ -1,5 +1,5 @@
 import './home.scss'
-import Experience from '@/components/home/Experience'
+import ExperienceClient from '@/components/home/ExperienceClient'
 import ValueComponent from '@/components/home/Value'
 import AboutComponent from '@/components/home/About'
 import CompaniesComponent from '@/components/home/Companies'
@@ -15,7 +15,7 @@ export default function Home() {
         <main>
             <div className='canvas-wrapper'>
                 <h1 className="title-experience">Imagination</h1>
-                <Experience />
+                <ExperienceClient />
             </div>
 
             <div className="wrapper content">
