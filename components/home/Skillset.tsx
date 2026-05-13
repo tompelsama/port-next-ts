@@ -59,7 +59,7 @@ export default function Skillset({ skills = [], title = "Work Experience" }: Pro
                     <li 
                         className="skill-wrapper" 
                         key={ id }
-                        ref={el => skillsRef.current[index] = el}
+                        ref={el => { skillsRef.current[index] = el }}
                     >
                         <div className="skill-icon">
                             <Image 

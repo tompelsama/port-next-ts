@@ -19,14 +19,14 @@ export default function WalletComponent({ }) {
     )
     let [totalPerPage, setTotalPerPage] = useState<number>(0)
     const [total, setTotal] = useState<number>(0)
-    const [nfts, setNfts] = useState<OwnedNft[] | []>([])
+    const [nfts, setNfts] = useState<OwnedNft[]>([])
     const [page, setPage] = useState<string | undefined>()
     const [error, setError] = useState<string | null>(null)
     const [firstLoading, setfirstLoading] = useState(true)
     const [loading, setLoading] = useState(false)
     const [lastPage, setLastPage] = useState(true)
 
-    const input = useRef<any>()
+    const input = useRef<any>(null)
 
     const fetchNfts = async () => {
         setError(null)

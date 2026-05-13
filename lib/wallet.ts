@@ -1,4 +1,4 @@
-import { Alchemy, Network } from "alchemy-sdk";
+import { Alchemy, Network, OwnedNft } from "alchemy-sdk";
 
 const config = {
     apiKey: process.env.ALCHEMY_API_KEY,
@@ -29,7 +29,7 @@ export const getNfts = async (address: string | undefined, pageSize: number, pag
         );
 
         numNfts = nfts["totalCount"]
-        nftList = nfts["ownedNfts"]
+        nftList = nfts["ownedNfts"] as unknown as OwnedNft[]
         pageKey = nfts["pageKey"]
     }
 

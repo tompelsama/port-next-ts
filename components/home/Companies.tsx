@@ -55,7 +55,7 @@ export default function CompaniesComponent({ companies = [], title = "Work Exper
                     <div 
                         className="company-wrapper" 
                         key={ id } 
-                        ref={el => tilesRef.current[index] = el}
+                        ref={el => { tilesRef.current[index] = el }}
                     >
                         <p className="company-order">{ `0${id}` }</p>
                         <p className="company-detail">
