@@ -19,8 +19,8 @@ export default function AboutComponent({ }) {
                 </div>
                 <div className="about-desc">
                     <h3 className="subsubtitle">Tommy Saputra</h3>
-                    <h4 className="subsubsubtitle">Front End Developer</h4>
-                    <p className="paragraph">A Front End Developer based in Australia.</p>
+                    <h4 className="subsubsubtitle">Software Engineer</h4>
+                    <p className="paragraph">Based in Sydney, Australia.</p>
                     <p className="paragraph">I am a collaborative team player who values clear communication and feedback. Also, a highly organised person who can manage multiple projects simultaneously while maintaining attention to detail and meeting deadlines.</p>
                 </div>
             </div>
